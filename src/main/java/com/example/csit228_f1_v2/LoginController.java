@@ -19,7 +19,7 @@ public class LoginController {
     public TextArea txtUser;
     public TextArea txtPassword;
     public Button btnLogin;
-    public TextArea txtRegister;
+    public Label txtRegister;
 
     @FXML
     private Label welcomeText;
