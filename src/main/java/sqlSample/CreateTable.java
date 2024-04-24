@@ -1,4 +1,4 @@
-package com.example.csit228_f1_v2;
+package sqlSample;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -7,10 +7,14 @@ import java.sql.Statement;
 public class CreateTable {
     public static void main(String[] args) {
         Connection c = MySqlConnection.getConnection();
-        String query = "CREATE TABLE tblOopAct (" +
-        "id INT PRIMARY KEY AUTO_INCREMENT," +
-                "name VARCHAR(50) NOT NULL," +
-                "password VARCHAR(50) NOT NULL)";
+        String query = "CREATE TABLE tblTodo (" +
+                "todo_id INT AUTO_INCREMENT PRIMARY KEY," +
+                "user_id INT," +  // Foreign key reference to tblusers
+                "task VARCHAR(100)," +
+                "isFinished BOOLEAN," +
+                "FOREIGN KEY (user_id) REFERENCES tblusers(id)" +
+                ")";
+
 
         try {
             Statement statement = c.createStatement();

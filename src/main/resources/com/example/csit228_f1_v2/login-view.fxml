@@ -3,15 +3,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="pnMain" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csit228_f1_v2.LoginController">
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csit228_f1_v2.LoginController">
    <children>
-      <Pane prefHeight="812.0" prefWidth="375.0">
+      <Pane fx:id="pnLogin" prefHeight="600.0" prefWidth="375.0">
          <children>
-            <TextArea fx:id="txtUser" layoutX="88.0" layoutY="342.0" prefHeight="20.0" prefWidth="200.0" />
-            <TextArea fx:id="txtPassword" layoutX="88.0" layoutY="387.0" prefHeight="20.0" prefWidth="200.0" />
-            <Label fx:id="txtForgot" layoutX="189.0" layoutY="509.0" prefHeight="17.0" prefWidth="99.0" text="Forgot Password?" />
-            <Label fx:id="txtRegister" layoutX="91.0" layoutY="509.0" text="New here?" />
-            <Button fx:id="btnLogin" layoutX="89.0" layoutY="433.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" text="Login" />
+            <PasswordField fx:id="txtPass" layoutX="87.0" layoutY="262.0" minHeight="20.0" prefHeight="38.0" prefWidth="200.0" />
+            <Button fx:id="btnLogin" layoutX="87.0" layoutY="318.0" mnemonicParsing="false" onAction="#loginHandle" prefHeight="37.0" prefWidth="200.0" text="Login" />
+            <Label fx:id="txtStatus" layoutX="138.0" layoutY="183.0" prefHeight="17.0" prefWidth="99.0" />
+            <Hyperlink fx:id="btnRegister" layoutX="86.0" layoutY="372.0" onAction="#openRegister" text="New here?" />
+            <Hyperlink fx:id="btnForgot" layoutX="188.0" layoutY="372.0" onAction="#openForgot" text="Forgot Password?" />
+            <TextArea fx:id="txtUser" layoutX="87.0" layoutY="214.0" prefHeight="20.0" prefWidth="200.0" />
          </children>
       </Pane>
    </children>

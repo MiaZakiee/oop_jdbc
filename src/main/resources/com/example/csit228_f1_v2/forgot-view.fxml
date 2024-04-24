@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csit228_f1_v2.ForgotController">
+   <children>
+      <Pane fx:id="pnForgot" prefHeight="600.0" prefWidth="375.0">
+         <children>
+            <PasswordField fx:id="txtPass1" layoutX="88.0" layoutY="254.0" prefHeight="20.0" prefWidth="200.0" promptText="New password" /><PasswordField fx:id="txtPass2" accessibleRole="TEXT_FIELD" layoutX="88.0" layoutY="288.0" prefHeight="20.0" prefWidth="200.0" promptText="Confirm Password" />
+            <Label layoutX="88.0" layoutY="159.0" prefHeight="20.0" prefWidth="156.0" text="Please enter your details" />
+            <TextField fx:id="txtUser" layoutX="88.0" layoutY="218.0" prefHeight="20.0" prefWidth="200.0" promptText="Enter username" />
+            <Button fx:id="" layoutX="88.0" layoutY="335.0" mnemonicParsing="false" onAction="#handleReset" prefWidth="200.0" text="Register" />
+            <Label fx:id="txtStatus" layoutX="108.0" layoutY="186.0" prefHeight="20.0" prefWidth="156.0" />
+            <Hyperlink layoutX="248.0" layoutY="369.0" onAction="#openSignin" text="Back" />
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pnMain" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csit228_f1_v2.MainController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="500.0" />
+      <ScrollPane layoutX="48.0" layoutY="68.0" minViewportHeight="420.0" minViewportWidth="390.0" prefHeight="372.0" prefWidth="352.0">
+         <content>
+            <VBox fx:id="pnData" prefHeight="412.0" prefWidth="390.0">
+               <children>
+                  <TextArea layoutX="38.0" layoutY="22.0" prefHeight="38.0" prefWidth="295.0" wrapText="true" />
+                  <CheckBox layoutX="14.0" layoutY="32.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="16.0" />
+                  <ChoiceBox layoutX="345.0" layoutY="29.0" prefHeight="25.0" prefWidth="12.0" />
+               </children>
+            </VBox>
+         </content></ScrollPane>
+      <Label layoutX="56.0" layoutY="45.0" prefHeight="17.0" prefWidth="46.0" text="TASKS" />
+      <Button layoutX="345.0" layoutY="517.0" mnemonicParsing="false" onAction="#addTodo" prefHeight="25.0" prefWidth="108.0" text="Add TODO" />
+      <Label fx:id="txtWelcome" layoutX="48.0" layoutY="20.0" prefHeight="17.0" prefWidth="46.0" />
+      <Button layoutX="53.0" layoutY="542.0" mnemonicParsing="false" onAction="#signout" text="Signout" />
+   </children>
+</AnchorPane>

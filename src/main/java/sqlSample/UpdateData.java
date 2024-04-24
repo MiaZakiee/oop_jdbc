@@ -1,4 +1,4 @@
-package com.example.csit228_f1_v2;
+package sqlSample;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
